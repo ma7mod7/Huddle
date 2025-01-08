@@ -1,0 +1,450 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: "Open Sans", serif;
+}
+/* start header */
+header {
+    background-image: url('huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 35px;
+    margin-bottom: 100px;
+}
+header nav{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .Try{
+    font-size: 18px;
+    padding: 10px 25px ;
+    width: 200px;
+    border-radius: 30px;
+    background-color: hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+header .Try:hover{
+    color:#ccc ;
+    transition: 0.3s;
+
+}
+header .mainpage{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .mainpage .main__text{
+    width:650px;
+}
+header .mainpage .main__text h2{
+    font-size:56px;
+}
+header .mainpage .main__text p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+header .mainpage .main__text a{
+    display: block;
+    width: 350px;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+header .mainpage .main__text a:hover{
+    background-color: hsla(322, 100%, 66%, 0.835);
+}
+header .mainpage .main__image img{
+    width: 700px;
+}
+@media (max-width:1440px){
+    header .mainpage .main__image img {
+        width:550px;
+    }
+    header .mainpage .main__text a{
+        width: 300px;
+    }
+}
+@media (max-width: 1200px) {
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    header .mainpage .main__text {
+        width: 100%;
+    }
+    header .mainpage .main__image img {
+        width: 100%;
+    }
+    header .mainpage .main__text h2{
+        font-size:32px;
+        padding-right: 10px;
+
+    }
+    header .mainpage .main__text a{
+        padding: 10px 10px;
+        width: 250px;
+    }
+    header .mainpage .main__text p{
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    header .mainpage .main__text {
+        width: 100%;
+    }
+    header .mainpage .main__image img {
+        width:340px;
+        margin-top: -50px;
+
+    }
+    header .mainpage .main__text h2{
+        font-size:32px;
+        padding-right: 10px;
+
+    }
+    header .mainpage .main__text p{
+        padding-right: 10px;
+        margin-bottom: 25px;
+    }
+    header .mainpage .main__text a{
+        width: 200px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background-image: url('huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg');
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header .mainpage .main__text {
+        width: 100%;
+    }
+    header .mainpage{
+        display: block;
+    }
+    header .mainpage .main__image {
+        display: flex;
+        justify-content: center;
+    }
+    header .mainpage .main__image img {
+        margin-top: 40px;
+        width: 290px;
+    }
+    header .mainpage .main__text h2{
+        font-size:22px;
+        width: 100%;
+        text-align: center;
+    }
+    header .mainpage .main__text p{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    header .mainpage .main__text a{
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        padding: 10px 15px;
+    }
+    .logo-icon{
+        width: 120px;
+    }
+    header .Try{
+        font-size: 12px;
+        padding: 10px 25px ;
+        width: 120px;
+        border-radius: 30px;
+        background-color: hsl(193, 100%, 96%);
+        color: hsl(192, 100%, 9%);
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+/* end header */
+
+/* start multi-sections*/
+
+.general__style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:45px 85px;
+    box-shadow: 0px 0px 10px  rgb(231, 230, 230);
+    border-radius: 14px;
+    padding: 40px; 
+    height: 490px;
+}
+
+.general__style .text--section{
+    width: 55%;
+}
+.general__style .text--section h3{
+    font-size: 42px;
+    padding-bottom: 8px;
+}
+
+.general__style .text--section p{
+    color: #ccc;
+    font-size: 18px;
+}
+.general__style img{
+    width: 500px;
+}
+@media (max-width:1024px) {
+    .general__style img{
+        width: 350px;
+    
+    }
+}
+@media (max-width:768px) {
+    .general__style {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin: 35px 25px;
+        height: auto;
+    }
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 35px 25px;
+        height: auto;
+    }
+    .general__style img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .general__style .text--section {
+        width: 100%;
+    }
+    .general__style .text--section h3{
+        font-size: 30px;
+    }
+    .general__style .text--section p{
+        font-size: 16px;
+    }
+}
+/* end  mulit-section*/
+
+/* start ready */
+.Ready{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 5px  rgb(231, 230, 230);
+    padding: 20px;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 12px;
+    transform: translateY(80px);
+}
+.Ready h3{
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+.Ready a{
+    display: inline-block;
+    width: 350px;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+.Ready a:hover{
+    background-color: hsla(322, 100%, 66%, 0.86);
+}
+/* end ready */
+/* start footer*/
+footer{
+    background-color:  hsl(192, 100%, 9%);
+}
+footer section{
+    display: flex;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 155px;
+    padding-bottom: 55px;
+    gap: 150px;
+}
+
+footer section .logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+
+}
+footer section .logo-footer img{
+    width: 150px;
+}
+footer section .logo-footer .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+footer section .logo-footer .location p{
+    margin-left: 14px;
+    margin-top: 20px;
+    width: 500px;
+    line-height: 26px;
+}
+footer section .logo-footer .phone-number{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+footer section .logo-footer .phone-number p{
+    margin-left: 16px;
+}
+footer section .logo-footer .mail{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+}
+footer section .logo-footer .mail p{
+    margin-left: 16px;
+}
+
+footer section .about-us{
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    gap: 18px;
+}
+footer section .about-us a{
+    color: white;
+
+}
+footer section .about-us a:hover{
+    text-decoration: underline;
+}
+
+
+footer section .Contactus{
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    gap: 18px;
+}
+footer section .Contactus a{
+    color: white;
+
+}
+footer section .Contactus a:hover{
+    text-decoration: underline;
+}
+footer section .social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    color: white;
+}
+footer section .social-media div{
+    margin-top: 80px;
+}
+footer section .social-media div i{
+    padding: 8px;
+    font-size:20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 6px;
+}
+footer section .social-media div i:hover{
+    color:hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
+@media (max-width:1024px) {
+
+    footer section{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 120px;
+        padding-bottom: 55px;
+    }
+
+    footer section .logo-footer .location{
+        justify-content: flex-start;
+    }
+    footer section .logo-footer .location p{
+        width: 100%;
+        font-size: 14px;
+    }
+    footer section .about-us{
+        margin-top: 45px;
+    }
+    footer section .Contactus{
+        margin-top: 45px;
+    }
+    footer section .social-media{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    footer section .social-media div{
+        margin-bottom: -70px;
+    }
+    footer section .social-media p{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media (max-width:425px){
+    .Ready{
+        width: 80%;
+    }
+    .Ready a{
+        width: 100%;
+        font-size: 16px;
+        padding: 10px ;
+    }
+    .Ready h3{
+        font-size: 18px;
+    }
+}
